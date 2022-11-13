@@ -8,7 +8,6 @@
 
 get_header();
 ?>
-
     <div class="container">
 		<?php
 		if ( have_posts() ) { // check is this posts
