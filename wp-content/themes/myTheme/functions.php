@@ -12,6 +12,7 @@ function get_style_files(): void {
 
 function get_script_files(): void {
 	wp_enqueue_script( "main-js", get_template_directory_uri() . '/js/main.js', array(), false, true );
+	wp_enqueue_style("tailwindcss", get_template_directory_uri() . '/css/tailwindcss.min.js' );
 }
 
 
