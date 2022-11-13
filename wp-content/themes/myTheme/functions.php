@@ -16,10 +16,7 @@ function get_script_files(): void {
 
 
 function mytheme_register_nav_menu() {
-	register_nav_menus( array(
-		'primary_menu' => __( 'Primary Menu', 'text_domain' ),
-		'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
-	) );
+	register_nav_menu('primary-menu', __('Navigation Bar'));
 }
 
 
@@ -33,4 +30,4 @@ add_action( 'wp_enqueue_scripts', 'get_style_files' );
 add_action( 'wp_enqueue_scripts', 'get_script_files' );
 
 
-add_action( 'after_setup_theme', 'mytheme_register_nav_menu' );
+add_action( 'init', 'mytheme_register_nav_menu' );
