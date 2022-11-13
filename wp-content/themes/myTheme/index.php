@@ -11,10 +11,11 @@
 <body>
 
 <?php get_header(); ?>
-
+<header>Header</header>
 <p class="test">Hi fuck you</p>
 
-<?php get_footer(); ?>
 
+<footer>Footer</footer>
+<?php get_footer(); ?>
 </body>
 </html>
