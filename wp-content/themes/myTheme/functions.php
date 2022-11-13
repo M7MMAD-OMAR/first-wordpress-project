@@ -26,6 +26,10 @@ function mytheme_register_nav_menu() {
 	register_nav_menu('primary-menu', __('Navigation Bar'));
 }
 
+function myNav_menue() {
+	wp_nav_menu();
+}
+
 
 /**
  * Add Actions in myTheme
