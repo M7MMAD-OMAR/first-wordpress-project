@@ -4,6 +4,8 @@
  * @package myTheme
  */
 
+echo '<pre>';
+print_r(get_template_directory_uri());
 
 
 function get_style_files(): void {

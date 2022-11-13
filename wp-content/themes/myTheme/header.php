@@ -6,6 +6,8 @@
  */
 
 ?>
+
+
 <!doctype html>
 <html <?php language_attributes(); ?> >
 <head>
@@ -15,8 +17,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="pingback" href="<?php bloginfo(show: 'pingback_url'); ?>">
     <title><?php bloginfo(show: 'name'); ?></title>
+    <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?> >
 
-<?php get_header(); ?>
+<?php wp_body_open(); ?>
+
 <header>Header</header>

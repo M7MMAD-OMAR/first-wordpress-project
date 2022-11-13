@@ -6,7 +6,7 @@
  * @package myTheme
  */
 
-include_once 'header.php';
+get_header();
 ?>
 
 
@@ -18,4 +18,4 @@ include_once 'header.php';
 
 
 
-<?php include_once 'footer.php'; ?>
+<?php get_footer(); ?>
