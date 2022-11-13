@@ -17,7 +17,11 @@ function get_script_files(): void {
 
 }
 
-
+/**
+ * @return void
+ * Created By @M7MMAD-OMAR
+ * Added Nav Menu
+ */
 function mytheme_register_nav_menu() {
 	register_nav_menu('primary-menu', __('Navigation Bar'));
 }
@@ -29,8 +33,8 @@ function mytheme_register_nav_menu() {
  * Added By @M7MMAD-OMAR
  *
  */
+
 add_action( 'wp_enqueue_scripts', 'get_style_files' );
 add_action( 'wp_enqueue_scripts', 'get_script_files' );
-
 
 add_action( 'init', 'mytheme_register_nav_menu' );
