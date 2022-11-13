@@ -1,4 +1,14 @@
 <?php
+/**
+ * Theme My Theme
+ * @package myTheme
+ */
+echo '<pre>';
+
+print_r(get_template_directory_uri())   ;
+
+echo '</pre>';
+
 
 
 function get_style_files(): void {

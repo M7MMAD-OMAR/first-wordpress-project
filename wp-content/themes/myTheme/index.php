@@ -9,6 +9,12 @@
     <title><?php bloginfo(show: 'name'); ?></title>
 </head>
 <body>
+
 <?php get_header(); ?>
+
+<p class="test">Hi fuck you</p>
+
+<?php get_footer(); ?>
+
 </body>
 </html>
