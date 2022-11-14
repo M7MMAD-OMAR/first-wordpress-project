@@ -7,9 +7,9 @@
  */
 
 get_header();
-?>\
+?>
 
-    <div class="container">
+    <div class="container m-5 p-5">
 		<?php
 		if ( have_posts() ) { // check is this posts
 			while ( have_posts() ) {  // while posts
@@ -31,8 +31,16 @@ get_header();
                 <hr>
                 <h5>Category</h5>
                 <p><?php the_category(); ?></p>
-                
-				<?php
+
+                <hr>
+                <hr>
+                <p>Comments</p>
+                <?php comments_popup_link('Zero Comment', 'One Comment', '% Comment', 'comment_url', 'Disable Comment'); ?>
+                <?php the_post_thumbnail('', ['class' => 'img-responsive img-thumbnail', 'title' => 'image title']); ?>
+                <?php the_content('Reade more! fuck youuuuuuuuuuuuuuu'); ?>
+
+
+                <?php
 			} // end while posts
 		} // end if check is this posts
 		?>
